@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang fr>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="css/style.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="css/mediaqueries.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <title>Antoine Cerqueus | Développeur Web Junior</title>
+</head>
+
+<body>
+    <!-- ========================= 
+                  MENU  
+     ========================= -->
+    <nav role="navigation">
+        <div id="menuToggle">
+            <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+            <input type="checkbox" />
+
+            <!-- Some spans to act as a hamburger.-->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+                <a href="#home">
+                    <li>Accueil</li>
+                </a>
+                <a href="#work">
+                    <li>Projets</li>
+                </a>
+                <a href="#techskills">
+                    <li>Compétences</li>
+                </a>
+                <a href="#about">
+                    <li>Présentation</li>
+                </a>
+                <a href="#contact">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="home" id="home">
+        <div class="intro-1">
+            <span id="B">B</span>
+            <span id="O">o</span>
+            <span id="N">n</span>
+            <span id="J">j</span>
+            <span id="Oo">o</span>
+            <span id="U">u</span>
+            <span id="R">r</span>
+            <!-- <div id="I"><i class="fas fa-exclamation"></i></div> -->
+            <!-- <div id="dot"></div> -->
+        </div>
+        <div class="intro-2">
+            <h1>Bienvenue sur mon Portfolio</h1>
+            <h2>Je m'appelle <span id="name">Antoine Cerqueus</span> . <br />
+                Je suis développeur web en formation à <span id="simplon"><a href="www.simplon.co" title="Site de Simplon">Simplon</a></span> Clermont-Ferrand.<br />
+                Voici quelques projets réalisés ainsi que les compétences validées.
+            </h2>
+           <a href="#work"><div class="nav-inverse" id="enter">découvrir</div></a> 
+        </div>
+    </section>
+    <main>
+        <nav id="work">
+            <div class="nav" id="nav-all">tous</div>
+            <div class="nav" id="nav-js">javascript</div>
+            <div class="nav" id="nav-php">php</div>
+            <div class="nav" id="nav-wp">wordpress</div>
+        </nav>
+        <section class="container all" id="all">
+            <div class="box e-commerce">
+                <div class="box-title"><a href="ecommerce.html">E-Commerce</a></div>
+            </div>
+            <div class="box sea-battle">
+                <div class="box-title">Battle Ship</div>
+            </div>
+            <div class="box soon">
+                <div class="box-title">Bientôt</div>
+            </div>
+            <div class="box soon">
+                <div class="box-title">Bientôt</div>
+            </div>
+        </section>
+
+        <section class="container js" id="js">
+            <div class="box sea-battle">
+                <div class="box-title">Sea battle</div>
+            </div>
+            <div class="box">
+                <div class="box-title">Breaking Bad</div>
+            </div>
+        </section>
+
+        <section class="container php" id="php">
+            <div class="soon">Bientôt disponible...</div>
+        </section>
+
+        <section class="container wp" id="wp">
+            <div class="soon">Bientôt disponible...</div>
+        </section>
+
+
+
+
+    </main>
+
+    
+    <!-- <script type="text/javascript" src="js/script.js"></script> -->
+    <script type="text/javascript" src="js/script.jquery.js"></script>
+</body>
+
+</html>
