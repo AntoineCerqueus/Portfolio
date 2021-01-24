@@ -1,0 +1,215 @@
+ .apparition {
+   animation: fadein 2s;
+   -moz-animation: fadein 2s;
+   /* Firefox */
+   -webkit-animation: fadein 2s;
+   /* Safari et Chrome */
+   -o-animation: fadein 2s;
+   /*Opera */
+ }
+
+ @keyframes fadein {
+   from {
+     opacity: 0;
+   }
+
+   to {
+     opacity: 1;
+   }
+ }
+
+ @-moz-keyframes fadein {
+
+   /* Firefox */
+   from {
+     opacity: 0;
+   }
+
+   to {
+     opacity: 1;
+   }
+ }
+
+ @-webkit-keyframes fadein {
+
+   /* Safari et Chrome */
+   from {
+     opacity: 0;
+   }
+
+   to {
+     opacity: 1;
+   }
+ }
+
+ @-o-keyframes fadein {
+
+   /*Opera */
+   from {
+     opacity: 0;
+   }
+
+   to {
+     opacity: 1;
+   }
+ }
+
+ .overall {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 6px;
+ }
+
+ .name {
+   width: 100px;
+   height: auto;
+   background: #000000;
+   color: #fcbf55;
+   font-weight: 600;
+   font-size: 1.2rem;
+   text-align: center;
+   padding: 2px;
+   border-right: 3px solid #fcbf55;
+ }
+
+ .container-bar {
+   width: 250px;
+ }
+
+ .progress {
+   padding: 6px;
+   background: #000000;
+ }
+
+ .progress-bar {
+   height: 20px;
+   border-radius: 4px;
+   transition: 0.4s linear;
+   transition-property: width, background-color;
+ }
+
+ .progress-striped .progress-bar {
+   background-color: #fcbf55;
+   width: 80%;
+   background-image: linear-gradient(45deg,
+       rgb(252, 163, 17) 25%,
+       transparent 25%,
+       transparent 50%,
+       rgb(252, 163, 17) 50%,
+       rgb(252, 163, 17) 75%,
+       transparent 75%,
+       transparent);
+   animation: progressAnimationStrike 3s;
+ }
+
+ @keyframes progressAnimationStrike {
+   from {
+     width: 0;
+   }
+
+   to {
+     width: 80%;
+   }
+ }
+
+ .progress-striped-20 .progress-bar-20 {
+   background-color: #fcbf55;
+   width: 20%;
+   background-image: linear-gradient(45deg,
+       rgb(252, 163, 17) 25%,
+       transparent 25%,
+       transparent 50%,
+       rgb(252, 163, 17) 50%,
+       rgb(252, 163, 17) 75%,
+       transparent 75%,
+       transparent);
+   animation: progressAnimationStrike20 3s;
+ }
+
+ @keyframes progressAnimationStrike20 {
+   from {
+     width: 0;
+   }
+
+   to {
+     width: 20%;
+   }
+ }
+
+ .progress-striped-40 .progress-bar-40 {
+   background-color: #fcbf55;
+   width: 40%;
+   background-image: linear-gradient(45deg,
+       rgb(252, 163, 17) 25%,
+       transparent 25%,
+       transparent 50%,
+       rgb(252, 163, 17) 50%,
+       rgb(252, 163, 17) 75%,
+       transparent 75%,
+       transparent);
+   animation: progressAnimationStrike40 3s;
+ }
+
+ @keyframes progressAnimationStrike40 {
+   from {
+     width: 0;
+   }
+
+   to {
+     width: 40%;
+   }
+ }
+
+ .progress-striped-70 .progress-bar-70 {
+   background-color: #fcbf55;
+   width: 70%;
+   background-image: linear-gradient(45deg,
+       rgb(252, 163, 17) 25%,
+       transparent 25%,
+       transparent 50%,
+       rgb(252, 163, 17) 50%,
+       rgb(252, 163, 17) 75%,
+       transparent 75%,
+       transparent);
+   animation: progressAnimationStrike70 3s;
+ }
+
+ @keyframes progressAnimationStrike70 {
+   from {
+     width: 0;
+   }
+
+   to {
+     width: 70%;
+   }
+ }
+
+ .progress-striped-50 .progress-bar-50 {
+   background-color: #fcbf55;
+   width: 50%;
+   background-image: linear-gradient(45deg,
+       rgb(252, 163, 17) 25%,
+       transparent 25%,
+       transparent 50%,
+       rgb(252, 163, 17) 50%,
+       rgb(252, 163, 17) 75%,
+       transparent 75%,
+       transparent);
+   animation: progressAnimationStrike50 3s;
+ }
+
+ @keyframes progressAnimationStrike50 {
+   from {
+     width: 0;
+   }
+
+   to {
+     width: 50%;
+   }
+ }
+
+ /* .show {
+   opacity: 1;
+   transform: translateY(-20px);
+   transition: all 1s ease 0s;
+ } */

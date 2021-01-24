@@ -1,10 +1,202 @@
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-width: 1200px) {
+  #B {
+    margin-top: 4vh;
+    font-size: 10vh;
+  }
 
-/* @media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-    .sidenav a {
-        font-size: 1rem;
-    }
-} */
+  #O {
+    margin-top: 4vh;
+    font-size: 8vh;
+  }
+
+  #N {
+    margin-top: 4vh;
+    font-size: 8vh;
+  }
+
+  #J {
+    margin-top: 4vh;
+    font-size: 8vh;
+  }
+
+  #Oo {
+    margin-top: 4vh;
+    font-size: 8vh;
+  }
+
+  #U {
+    margin-top: 4vh;
+    font-size: 8vh;
+  }
+
+  #R {
+    margin-top: 4vh;
+    font-size: 8vh;
+  }
+
+  #menu li {
+    font-size: 3.5vw;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+  }
+
+  .intro-1 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: #fcbf55;
+    padding-left: 0px;
+    height: 0px;
+    margin-top: 10vh;
+  }
+
+  .intro-2 {
+    display: flex;
+    color: #fcbf55;
+    text-align: center;
+    padding-left: 2vw;
+    margin: 8vh 0 4vh 0;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .nav {
+    width: 30vw;
+  }
+
+  .nav-inverse {
+    width: 20vw;
+  }
+
+  #enter {
+    /* font-size: 1.5em; */
+    margin-top: 10vh;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 10vh 0 2vh 0;
+    background-color: #fcbf55;
+    padding: 3vh 0 6vh 0;
+    border-radius: 5px;
+  }
+
+  /* .container-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8vh;
+  } */
+
+  #skills {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .hard-skills {
+    width: 80vw;
+    margin-bottom: 8vh;
+  }
+
+  .soft-skills {
+    width: 80vw;
+  }
+
+  .pipe {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #menu li {
+    font-size: 1.4em;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  #work {
+    margin-top: 18vh;
+  }
+
+  .intro-2 {
+    display: flex;
+    color: #fcbf55;
+    font-size: 0.9em;
+    text-align: start;
+    padding-left: 6vw;
+    margin: 8vh 0 4vh 0;
+  }
+
+  .nav-inverse {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    margin-bottom: 2vh;
+    padding: 1vw 1vw;
+    width: 26vw;
+  }
+
+  #enter {
+    font-size: 1.2em;
+    margin: 2vh auto 0 auto;
+  }
+
+  .box,
+  .screen {
+    width: 340px;
+    height: 220px;
+    margin: 20px auto;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  .border {
+    text-align: start;
+  }
+
+  .container-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6vh 0 4vh 0;
+  }
+
+  .left {
+    margin-right: 0px;
+  }
+
+  .overall {
+    width: 70vw;
+    margin: 0.4vh auto;
+  }
+
+  .name {
+    width: 120px;
+  }
+
+
+}

@@ -1,0 +1,15 @@
+.screen-1 {
+    background-image: url(../img/sea_battle.png);
+}
+
+.screen-2 {
+    background-image: url(../img/sea_battle/difficulty.png);
+}
+
+.screen-3 {
+    background-image: url(../img/sea_battle/placement.png);
+}
+
+.screen-4 {
+    background-image: url(../img/sea_battle/game_over.png);
+}

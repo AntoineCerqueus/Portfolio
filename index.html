@@ -2,123 +2,338 @@
 <html lang fr>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" media="screen" type="text/css" href="css/menu.css">
-    <link rel="stylesheet" media="screen" type="text/css" href="css/style.css">
-    <link rel="stylesheet" media="screen" type="text/css" href="css/mediaqueries.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
-    <title>Antoine Cerqueus | Développeur Web Junior</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" media="screen" type="text/css" href="css/animation.css" />
+  <link rel="stylesheet" media="screen" type="text/css" href="css/menu.css" />
+  <link rel="stylesheet" media="screen" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" media="screen" type="text/css" href="css/mediaqueries.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <title>Antoine Cerqueus | Développeur Web Junior</title>
 </head>
 
 <body>
-    <!-- ========================= 
-                  MENU  
+  <!-- ========================= 
+                MENU  
      ========================= -->
-    <nav role="navigation">
-        <div id="menuToggle">
-            <!--
-          A fake / hidden checkbox is used as click reciever,
-          so you can use the :checked selector on it.
-          -->
-            <input type="checkbox" />
+  <nav role="navigation apparition" id="navigation">
+    <div id="menuToggle">
+      <input type="checkbox" />
 
-            <!-- Some spans to act as a hamburger.-->
-            <span></span>
-            <span></span>
-            <span></span>
+      <span class="span-ham"></span>
+      <span class="span-ham"></span>
+      <span class="span-ham"></span>
 
-            <ul id="menu">
-                <a href="#home">
-                    <li>Accueil</li>
-                </a>
-                <a href="#work">
-                    <li>Projets</li>
-                </a>
-                <a href="#techskills">
-                    <li>Compétences</li>
-                </a>
-                <a href="#about">
-                    <li>Présentation</li>
-                </a>
-                <a href="#contact">
-                    <li>Contact</li>
-                </a>
-            </ul>
+      <ul id="menu">
+        <a href="#work-nav">
+          <li>Projets</li>
+        </a>
+        <a href="#skills">
+          <li>Compétences</li>
+        </a>
+        <a href="#about">
+          <li>A Propos</li>
+        </a>
+        <div class="logo">
+          <div class="linkedin">
+            <a href="https://www.linkedin.com/in/acerqueus/" target="__blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/AntoineCerqueus" target="_blank">
+              <i class="fab fa-github-square"></i>
+            </a>
+          </div>
         </div>
+      </ul>
+    </div>
+  </nav>
+  <section class="home" id="home">
+    <div class="intro-1">
+      <span id="B">B</span>
+      <span id="O">o</span>
+      <span id="N">n</span>
+      <span id="J">j</span>
+      <span id="Oo">o</span>
+      <span id="U">u</span>
+      <span id="R">r</span>
+    </div>
+    <div class="intro-2">
+      <h1>Bienvenue sur mon Portfolio</h1>
+      <h2>
+        Je m'appelle
+        <strong id="name">Antoine Cerqueus.</strong><br />
+        Je suis développeur web en formation à
+        <span id="simplon">
+          <a href="https://simplon.co/formation/developpeur-web-et-web-mobile/11" title="Site de Simplon">
+            <strong>Simplon</strong>
+          </a>
+        </span>
+        Clermont-Ferrand.
+        <br />
+        Voici quelques projets réalisés ainsi que les compétences validées.
+      </h2>
+      <a href="#work-nav">
+        <div class="nav-inverse" id="enter">entrez</div>
+      </a>
+    </div>
+  </section>
+
+   <!-- ========================= 
+              PROJECTS  
+     ========================= -->
+
+  <input type="hidden" id="work-nav">
+  <main id="main">
+    <nav id="work">
+      <div class="nav" id="nav-all">tous</div>
+      <div class="nav" id="nav-js">javascript</div>
+      <div class="nav" id="nav-php">php</div>
+      <div class="nav" id="nav-wp">wordpress</div>
     </nav>
 
-    <section class="home" id="home">
-        <div class="intro-1">
-            <span id="B">B</span>
-            <span id="O">o</span>
-            <span id="N">n</span>
-            <span id="J">j</span>
-            <span id="Oo">o</span>
-            <span id="U">u</span>
-            <span id="R">r</span>
-            <!-- <div id="I"><i class="fas fa-exclamation"></i></div> -->
-            <!-- <div id="dot"></div> -->
+    <section class="container all" id="all">
+      <a href="html/ecommerce.html">
+        <div class="box e-commerce apparition">
+          <div class="box-title">E-Commerce</div>
         </div>
-        <div class="intro-2">
-            <h1>Bienvenue sur mon Portfolio</h1>
-            <h2>Je m'appelle <span id="name">Antoine Cerqueus</span> . <br />
-                Je suis développeur web en formation à <span id="simplon"><a href="www.simplon.co" title="Site de Simplon">Simplon</a></span> Clermont-Ferrand.<br />
-                Voici quelques projets réalisés ainsi que les compétences validées.
-            </h2>
-           <a href="#work"><div class="nav-inverse" id="enter">découvrir</div></a> 
+      </a>
+      <a href="html/sea-battle.html">
+        <div class="box sea-battle apparition">
+          <div class="box-title">
+            Bataille Navale
+          </div>
         </div>
+      </a>
+      <a href="html/breaking_bad_api.html">
+        <div class="box api apparition">
+          <div class="box-title">
+            Breaking Bad API
+          </div>
+        </div>
+      </a>
+      <a href="html/prise_de_contact.html">
+        <div class="box contact apparition">
+          <div class="box-title">
+            Prise de Contact
+          </div>
+        </div>
+      </a>
+      <a href="html/market_place.html">
+        <div class="box market apparition">
+          <div class="box-title">
+            Market Place
+          </div>
+        </div>
+      </a>
+      <div class="box-soon apparition">
+        <p class="soon">Bientôt disponible !</p>
+        <div class="box-title">
+          Blog
+        </div>
+      </div>
     </section>
-    <main>
-        <nav id="work">
-            <div class="nav" id="nav-all">tous</div>
-            <div class="nav" id="nav-js">javascript</div>
-            <div class="nav" id="nav-php">php</div>
-            <div class="nav" id="nav-wp">wordpress</div>
-        </nav>
-        <section class="container all" id="all">
-            <div class="box e-commerce">
-                <div class="box-title"><a href="ecommerce.html">E-Commerce</a></div>
+
+    <section class="container js" id="js">
+      <a href="html/sea-battle.html">
+        <div class="box sea-battle apparition">
+          <div class="box-title">
+            Bataille Navale
+          </div>
+        </div>
+      </a>
+      <a href="html/breaking_bad_api.html">
+        <div class="box api apparition">
+          <div class="box-title">
+            Breaking Bad API
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <section class="container php" id="php">
+      <a href="html/prise_de_contact.html">
+        <div class="box contact apparition">
+          <div class="box-title">
+            Prise de Contact
+          </div>
+        </div>
+      </a>
+      <a href="html/market_place.html">
+        <div class="box market apparition">
+          <div class="box-title">
+            Market Place
+          </div>
+        </div>
+      </a>
+      <div class="box-soon apparition">
+        <p class="soon">Bientôt disponible !</p>
+        <div class="box-title">
+          Blog
+        </div>
+      </div>
+    </section>
+
+    <section class="container wp" id="wp">
+      <a href="html/ecommerce.html">
+        <div class="box e-commerce apparition">
+          <div class="box-title">E-Commerce</div>
+        </div>
+      </a>
+      <div class="box-soon apparition">
+        <p class="soon">Bientôt disponible !</p>
+        <div class="box-title">Création de thème Wordpress</div>
+      </div>
+    </section>
+
+    <!-- ========================= 
+              SKILLS  
+     ========================= -->
+
+    <section id="skills" class="hidden">
+      <div class="hard-skills">
+        <h2>Compétences Techniques</h2>
+        <h3>Front-End</h3>
+        <div class="overall">
+          <div class="name">HTML</div>
+          <div class="container-bar">
+            <div class="progress progress-striped">
+              <div class="progress-bar"></div>
             </div>
-            <div class="box sea-battle">
-                <div class="box-title">Battle Ship</div>
+          </div>
+        </div>
+        <div class="overall">
+          <div class="name">CSS</div>
+          <div class="container-bar">
+            <div class="progress progress-striped">
+              <div class="progress-bar"></div>
             </div>
-            <div class="box soon">
-                <div class="box-title">Bientôt</div>
+          </div>
+        </div>
+        <div class="overall">
+          <div class="name">JS</div>
+          <div class="container-bar">
+            <div class="progress progress-20 progress-striped-20">
+              <div class="progress-bar progress-bar-20"></div>
             </div>
-            <div class="box soon">
-                <div class="box-title">Bientôt</div>
+          </div>
+        </div>
+        <div class="overall">
+          <div class="name">jQuery</div>
+          <div class="container-bar">
+            <div class="progress progress-20 progress-striped-20">
+              <div class="progress-bar progress-bar-20"></div>
             </div>
-        </section>
-
-        <section class="container js" id="js">
-            <div class="box sea-battle">
-                <div class="box-title">Sea battle</div>
+          </div>
+        </div>
+        <h3>Back-End</h3>
+        <div class="overall">
+          <div class="name">PHP</div>
+          <div class="container-bar">
+            <div class="progress progress-40 progress-striped-40">
+              <div class="progress-bar progress-bar-40"></div>
             </div>
-            <div class="box">
-                <div class="box-title">Breaking Bad</div>
+          </div>
+        </div>
+        <div class="overall">
+          <div class="name">SQL</div>
+          <div class="container-bar">
+            <div class="progress progress-40 progress-striped-40">
+              <div class="progress-bar progress-bar-40"></div>
             </div>
-        </section>
+          </div>
+        </div>
+        <div class="overall">
+          <div class="name">Symfony</div>
+          <div class="container-bar">
+            <div class="progress progress-40 progress-striped-40">
+              <div class="progress-bar progress-bar-40"></div>
+            </div>
+          </div>
+        </div>
+        <h3>CMS</h3>
+        <div class="overall">
+          <div class="name">Wordpress</div>
+          <div class="container-bar">
+            <div class="progress progress-70 progress-striped-70">
+              <div class="progress-bar progress-bar-70"></div>
+            </div>
+          </div>
+        </div>
+        <h3>Autres technos</h3>
+        <div class="overall">
+          <div class="name">Github</div>
+          <div class="container-bar">
+            <div class="progress progress-50 progress-striped-50">
+              <div class="progress-bar progress-bar-50"></div>
+            </div>
+          </div>
+        </div>
+        <div class="overall">
+          <div class="name">Terminal</div>
+          <div class="container-bar">
+            <div class="progress progress-20 progress-striped-20">
+              <div class="progress-bar progress-bar-20"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="soft-skills">
+        <h2>Compétences Transverses</h2>
+        <h3>Développement Front-end</h3>
+        <p>Création de site vitrine à partir de maquette</p>
+        <h3>Développement Back-end</h3>
+        <p>Création de back-office pour manipuler vos données</p>
+        <h3>Gestion de Projets</h3>
+        <p>Initié aux méthodes agiles et aux outils de gestions de projets</p>
+        <h3>Design Responsive</h3>
+        <p>Des projets qui s'adaptent à toutes les diagonales d'écran</p>
+        <h3>Certifié Opquast</h3>
+        <p>Bonne connaissance des bonnes pratiques qualité Web</p>
+        <a id="certif" href="https://directory.opquast.com/fr/certificat/6G0N7O/" title="Certification Opquast">
+          ( Certification )
+        </a>
+      </div>
+    </section>
 
-        <section class="container php" id="php">
-            <div class="soon">Bientôt disponible...</div>
-        </section>
+    <!-- ========================= 
+              ABOUT  
+     ========================= -->
 
-        <section class="container wp" id="wp">
-            <div class="soon">Bientôt disponible...</div>
-        </section>
+    <section id="about" class="hidden">
+      <div class="about">
+        <h2>Antoine Cerqueus</h2>
+        <img src="img/antoine_cerqueus_mini_yellow.jpg" alt="photo de Antoine Cerqueus">
+        <p class="border">Enthousiaste, rigoureux et réactif<br /> j’ai développé au cours de mon parcours professionnel<br /> 
+          une forte capacité d’adaptation à un nouvel environnement, tant au niveau technologique que humain.<br />
+          Ayant également acquis une bonne maîtrise de l’anglais je comprends et communique de manière simple et
+          précise.</p>
+        <p class="border">Aujourd'hui,<br />
+          je continue d'apprendre à apprendre grâce à la pédagogie active enseignée à Simplon.<br />
+          Je suis de plus en plus autonome en continuant certains projets et en en créant de nouveaux.
+        </p>
+      </div>
+    </section>
 
-
-
-
-    </main>
-
-    
-    <!-- <script type="text/javascript" src="js/script.js"></script> -->
-    <script type="text/javascript" src="js/script.jquery.js"></script>
+    <footer id="footer">
+      <div class="linkedin">
+        <a href="https://www.linkedin.com/in/acerqueus/">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <p class="portfolio">Antoine Cerqueus | 2021</p>
+      <div class="git">
+        <a href="https://github.com/AntoineCerqueus">
+          <i class="fab fa-github-square"></i>
+        </a>
+      </div>
+    </footer>
+  </main>
+  <script type="text/javascript" src="js/script.jquery.js"></script>
 </body>
 
 </html>
