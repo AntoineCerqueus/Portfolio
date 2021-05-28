@@ -94,7 +94,7 @@ main {
   margin: auto;
   background-color: #000000;
   color: #fcbf55;
-  /* padding-left: 6vw; */
+  padding-left: 6vw;
   padding-right: 2vw;
   display: none;
 }
@@ -108,7 +108,6 @@ h2 {
 }
 
 h3 {
-
   text-align: center;
 
 }
@@ -221,7 +220,7 @@ h4 {
 
 a {
   text-decoration: none;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   color: #fcbf55;
   font-size: 16px;
   font-weight: 800;
@@ -230,11 +229,17 @@ a {
 .soon {
   font-size: 1.7em;
   color: #000000;
-  margin-bottom: 100px;
+  margin: auto;
 }
 
 .e-commerce {
-  background-image: url(../img/Maltethoublon_landing.png);
+  background-image: url(../img/Maltethoublon_landing.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.wp_theme {
+  background-image: url(../img/theme/accueil.png);
   background-size: cover;
   background-position: center;
 }
@@ -353,8 +358,13 @@ img {
   margin-right: 2vw;
 }
 
-.git {
+.cv {
   margin-left: 2vw;
+  padding: 2px 4px;
+  color: #000000;
+  background-color: #fcbf55;
+  border-radius: 4px;
+  font-size: 1.1em;
 }
 
 .hidden {

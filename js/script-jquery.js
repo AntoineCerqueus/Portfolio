@@ -19,6 +19,12 @@ $(document).ready(function () {
     }
 });
 
+// if (window.matchMedia("(max-width: 1200px)").matches) {
+//     /* La largeur minimum de l'affichage est 600 px inclus */
+//   } else {
+//     /* L'affichage est inférieur à 600px de large */
+//   }
+
 const showWorkMenu = $('#work');
 const home = $('#home');
 const showAll = $('#all');
