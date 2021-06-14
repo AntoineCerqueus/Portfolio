@@ -112,30 +112,6 @@
    }
  }
 
- .progress-striped-20 .progress-bar-20 {
-   background-color: #fcbf55;
-   width: 20%;
-   background-image: linear-gradient(45deg,
-       rgb(252, 163, 17) 25%,
-       transparent 25%,
-       transparent 50%,
-       rgb(252, 163, 17) 50%,
-       rgb(252, 163, 17) 75%,
-       transparent 75%,
-       transparent);
-   animation: progressAnimationStrike20 3s;
- }
-
- @keyframes progressAnimationStrike20 {
-   from {
-     width: 0;
-   }
-
-   to {
-     width: 20%;
-   }
- }
-
  .progress-striped-30 .progress-bar-30 {
    background-color: #fcbf55;
    width: 30%;
