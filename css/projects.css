@@ -20,7 +20,7 @@
 .container-button {
   display: flex;
   justify-content: center;
-  margin: 4vh 0 4vh 0;
+  margin: 4vh 0;
 }
 
 .left {

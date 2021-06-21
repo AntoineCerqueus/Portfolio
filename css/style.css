@@ -138,14 +138,12 @@ h4 {
 }
 
 .nav {
-  width: 13vw;
-  max-width: 100%;
   text-align: center;
   text-transform: uppercase;
   background-color: #fcbf55;
   border: 2px solid #000000;
   color: #000000;
-  padding: 10px 0 10px 0;
+  padding: 10px;
   font-weight: 800;
   border-radius: 5px;
   cursor: pointer;
@@ -159,14 +157,12 @@ h4 {
 }
 
 .nav-inverse {
-  width: 13vw;
-  max-width: 100%;
   text-align: center;
   text-transform: uppercase;
   color: #fcbf55;
   background-color: #000000;
   border: 2px solid #fcbf55;
-  padding: 10px 0 10px 0;
+  padding: 10px;
   font-weight: 800;
   border-radius: 5px;
   cursor: pointer;
