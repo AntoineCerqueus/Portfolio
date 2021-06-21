@@ -345,7 +345,7 @@ img {
 
 #footer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   margin: 2vh 0 2vh 0;
   color: #fcbf55;
@@ -356,16 +356,19 @@ img {
 }
 
 .linkedin {
-  margin-right: 2vw;
+  margin-right: 40px;
 }
 
 .cv {
-  margin-left: 2vw;
+  position: relative;
+  top: 4px;
+  margin-right: 40px;
   padding: 2px 4px;
   color: #000000;
   background-color: #fcbf55;
   border-radius: 4px;
   font-size: 1.1em;
+  font-weight: 500;
 }
 
 .hidden {
@@ -374,4 +377,10 @@ img {
 
 .portfolio {
   text-align: center;
+}
+
+.social{
+  display: flex;
+
+
 }
