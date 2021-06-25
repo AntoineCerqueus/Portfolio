@@ -212,6 +212,12 @@ a {
   margin: auto;
 }
 
+.canyoning {
+  background-image: url(../img/canyoning/landing.png);
+  background-size: cover;
+  background-position: center;
+}
+
 .e-commerce {
   background-image: url(../img/Maltethoublon_landing.jpg);
   background-size: cover;
@@ -362,4 +368,14 @@ img {
   display: flex;
 
 
+}
+
+.link{
+  text-decoration: underline;
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+.warning{
+  text-align: center;
 }
