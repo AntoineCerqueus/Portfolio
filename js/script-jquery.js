@@ -17,6 +17,16 @@ $(document).ready(function () {
         $(".intro-2").delay(2600).fadeIn(3000);
         hideElements();
     }
+
+    // ===================
+    //  SWITCH
+    // ===================
+
+    $(".toggle-switch").on("click", function (event) {
+        $("body").toggleClass("bright");
+        $("body").toggleClass("active");
+    });
+
 });
 
 // if (window.matchMedia("(max-width: 1200px)").matches) {

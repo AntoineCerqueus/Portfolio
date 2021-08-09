@@ -1,0 +1,165 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #000000;
+  color: #fcbf55;
+  transition: 0.2s all;
+}
+
+.bright {
+  background: #ffffff;
+}
+.bright .intro-1,
+.bright .intro-2,
+.bright a,
+.bright .about,
+.bright p {
+  color: #000000;
+}
+.bright .box-title,
+.bright .name,
+.bright .hard-skills h2,
+.bright .hard-skills h3 {
+  color: #ffffff;
+}
+.bright .nav,
+.bright .nav-inverse,
+.bright .container,
+.bright .soft-skills {
+  border: 2px solid #000000;
+  color: #000000;
+  background-color: #ffffff;
+}
+.bright .nav,
+.bright .hard-skills,
+.bright .nav-inverse:hover,
+.bright .cv {
+  color: #ffffff;
+  background-color: #000000;
+}
+.bright .nav-inverse,
+.bright .nav:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+.bright #certif {
+  color: #000000;
+  text-decoration: underline;
+}
+.bright .border::after {
+  border-bottom: solid 2px #000000;
+}
+.bright .name {
+  border: 3px solid #ffffff;
+}
+.bright .progress {
+  background-color: #ffffff;
+  border-left: 3px solid #000000;
+}
+.bright .progress-striped .progress-bar {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  width: 80%;
+  background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
+  animation: progressAnimationStrike 3s;
+}
+.bright .progress-striped-30 .progress-bar-30 {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  width: 30%;
+  background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
+  animation: progressAnimationStrike 3s;
+}
+
+.element {
+  position: fixed;
+  top: 2em;
+  left: 2em;
+}
+
+input[type=checkbox].toggle-switch {
+  transform: rotate(180deg);
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: 0;
+  cursor: pointer;
+  /* width of the track */
+  width: 3em;
+  /* height of the track */
+  height: 0.9em;
+  border-radius: 3em;
+  background-color: gray;
+  transition: background-color 0.09s ease-in-out;
+  position: relative;
+}
+input[type=checkbox].toggle-switch:active::after {
+  background-color: #f2f2f2;
+  padding-right: 0.8em;
+}
+input[type=checkbox].toggle-switch::after {
+  content: "";
+  /* toggle shape -- 
+  height should equal width 
+  to maintain circle */
+  width: 1.5em;
+  height: 1.5em;
+  background-color: #fcbf55;
+  border-radius: 3em;
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+  box-shadow: 2px 0px 5px 0 rgba(0, 0, 0, 0.15);
+}
+
+input[type=checkbox].toggle-switch:checked {
+  background-color: gray;
+}
+input[type=checkbox].toggle-switch:checked:active::after {
+  margin-left: -0.8em;
+}
+input[type=checkbox].toggle-switch:checked::after {
+  left: 2em;
+  background-color: #000000;
+}
+
+.opts {
+  color: gray;
+}
+
+.opt-1 {
+  color: #fcbf55;
+  position: relative;
+  left: 2em;
+  width: 2em;
+}
+
+.opt-2 {
+  position: relative;
+  left: -0.2em;
+  bottom: 1.2em;
+  width: 2em;
+}
+
+.fa-sun {
+  font-size: 1.3em;
+}
+
+.fa-moon {
+  font-size: 1.1em;
+}
+
+.opt-1,
+.opt-2 {
+  transition: 0.2s all;
+}
+
+.active .opt-1 {
+  color: gray;
+}
+.active .opt-2 {
+  color: #000000;
+}
+
+/*# sourceMappingURL=switch.css.map */

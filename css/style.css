@@ -1,7 +1,7 @@
 body {
   overflow-x: hidden;
   margin: 0;
-  background-color: #000000;
+  /* background-color: #000000; */
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -74,7 +74,7 @@ main {
   padding-left: 8vw;
   height: 100vh;
   /* background-color: #fcbf55; */
-  color: #fcbf55;
+  /* color: #fcbf55; */
   /* display: none; */
 }
 
@@ -92,8 +92,8 @@ main {
   display: flex;
   flex-direction: column;
   margin: auto;
-  background-color: #000000;
-  color: #fcbf55;
+  /* background-color: #000000; */
+  /* color: #fcbf55; */
   padding-left: 6vw;
   padding-right: 2vw;
   display: none;
@@ -110,11 +110,10 @@ h2 {
 h3 {
   text-transform: uppercase;
   text-align: center;
-
 }
 
 h4 {
-  color: #fcbf55;
+  /* color: #fcbf55; */
   font-size: 1.5em;
 }
 
@@ -137,7 +136,8 @@ h4 {
   flex-wrap: wrap;
 }
 
-.nav, .nav-inverse  {
+.nav,
+.nav-inverse {
   width: 13vw;
   text-align: center;
   text-transform: uppercase;
@@ -149,12 +149,14 @@ h4 {
   transition: all 250ms ease-in-out 0s;
 }
 
-.nav, .nav-inverse:hover{
+.nav,
+.nav-inverse:hover {
   color: #000000;
   background-color: #fcbf55;
 }
 
-.nav-inverse, .nav:hover {
+.nav-inverse,
+.nav:hover {
   color: #fcbf55;
   background-color: #000000;
 }
@@ -280,6 +282,10 @@ p {
   padding-bottom: 2vh;
 }
 
+.hard-skills h2 {
+  color: #000000;
+}
+
 .soft-skills {
   display: flex;
   flex-direction: column;
@@ -302,11 +308,13 @@ p {
           ABOUT  
 =======================  */
 
-img {
+.picture {
+  background-image: url("../img/antoine_cerqueus_mini_yellow.jpg");
   width: 150px;
-  height: auto;
+  height: 200px;
   border-radius: 200px;
   margin: auto;
+  background-repeat: no-repeat;
 }
 
 .about {
@@ -333,7 +341,6 @@ img {
   flex-direction: column;
   align-items: center;
   margin: 2vh 0 2vh 0;
-  color: #fcbf55;
 }
 
 .fab {
@@ -364,18 +371,16 @@ img {
   text-align: center;
 }
 
-.social{
+.social {
   display: flex;
-
-
 }
 
-.link{
+.link {
   text-decoration: underline;
   font-size: 1.2em;
   font-weight: 800;
 }
 
-.warning{
+.warning {
   text-align: center;
 }

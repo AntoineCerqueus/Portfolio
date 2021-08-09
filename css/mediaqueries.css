@@ -46,7 +46,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: #fcbf55;
+    /* color: #fcbf55; */
     padding-left: 0px;
     height: 0px;
     margin-top: 10vh;
@@ -54,7 +54,7 @@
 
   .intro-2 {
     display: flex;
-    color: #fcbf55;
+    /* color: #fcbf55; */
     text-align: center;
     padding-left: 2vw;
     margin: 8vh 0 4vh 0;

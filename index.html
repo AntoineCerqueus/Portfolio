@@ -14,6 +14,7 @@
   <link rel="stylesheet" media="screen" type="text/css" href="css/menu.css" />
   <link rel="stylesheet" media="screen" type="text/css" href="css/style.css" />
   <link rel="stylesheet" media="screen" type="text/css" href="css/mediaqueries.css" />
+  <link rel="stylesheet" media="screen" type="text/css" href="css/switch.css" />
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -36,6 +37,21 @@
   <!-- ========================= 
                 MENU  
      ========================= -->
+  <!-- <div class="flex justify-center items-center vh-100"> -->
+    <div class="element">
+      <div class="checkbox-wrap ">
+        <input type="checkbox" class="toggle-switch">
+      </div>
+      <div class="opts">
+        <div class="opt-1"><i class="fas fa-moon"></i>
+          <!-- <p>mode clair</p> -->
+        </div>
+        <div class="opt-2"><i class="fas fa-sun"></i>
+          <!-- <p>mode sombre</p> -->
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
   <nav role="navigation apparition" id="navigation">
     <div id="menuToggle">
       <input type="checkbox" />
@@ -59,17 +75,17 @@
         <hr>
         <div class="logo">
           <div class="linkedin-menu">
-            <a href="https://www.linkedin.com/in/acerqueus/" target="__blank">
+            <a href="https://www.linkedin.com/in/acerqueus/" target="__blank" title="Profil LinkedIn de Antoine Cerqueus">
               <i class="fab fa-linkedin"></i>
             </a>
           </div>
           <div>
-            <a href="img/Antoine_CERQUEUS.pdf" class="cv-reverse" target="_blank">
+            <a href="img/Antoine_CERQUEUS.pdf" class="cv-reverse" target="_blank" title="CV de Antoine Cerqueus">
               CV
             </a>
           </div>
           <div class="github">
-            <a href="https://github.com/AntoineCerqueus" target="_blank">
+            <a href="https://github.com/AntoineCerqueus" target="_blank" title="Dépôt github de Antoine Cerqueus">
               <i class="fab fa-github-square"></i>
             </a>
           </div>
@@ -94,7 +110,8 @@
         <strong id="name">Antoine Cerqueus.</strong><br />
         Je suis à la recherche de mon premier emploi en tant que développeur web.<br />
         Pour cette reconversion, j'ai été formé à
-        <span id="simplon"><a href="https://simplon.co/formation/developpeur-web-et-web-mobile/11" title="Site de Simplon">
+        <span id="simplon"><a href="https://simplon.co/formation/developpeur-web-et-web-mobile/11"
+            title="Site de Simplon">
             <strong>Simplon</strong></a></span> où j'ai obtenu mon titre professionnel (équivalent BTS).
         <br />
         Voici quelques projets réalisés ainsi que les compétences validées.
@@ -375,10 +392,11 @@
         <h3>Design Responsive</h3>
         <p>Des projets qui s'adaptent à toutes les diagonales d'écran</p>
         <h3>Autonomie & Débrouillardise</h3>
-        <p>Google est mon ami !</p>
+        <p>Google is my friend !</p>
         <h3>Certifié Opquast</h3>
         <p>Bonne connaissance des bonnes pratiques qualité Web</p>
-        <a id="certif" href="https://directory.opquast.com/fr/certificat/6G0N7O/" title="Certification Opquast" target="_blank">
+        <a id="certif" href="https://directory.opquast.com/fr/certificat/6G0N7O/" title="Certification Opquast"
+          target="_blank">
           ( Certification )
         </a>
       </div>
@@ -391,7 +409,7 @@
     <section id="about" class="hidden">
       <div class="about">
         <h2>Antoine Cerqueus</h2>
-        <img src="img/antoine_cerqueus_mini_yellow.jpg" alt="photo de Antoine Cerqueus">
+        <div class="picture"></div>
         <p class="border">Enthousiaste, curieux et rigoureux,<br />
           j’ai acquis au cours de mon parcours professionnel<br />
           une forte capacité d’adaptation à un nouvel environnement, tant au niveau technologique que humain.<br />
@@ -411,23 +429,23 @@
 
     <footer id="footer">
       <div class="social">
-      <div class="linkedin">
-        <a href="https://www.linkedin.com/in/acerqueus" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
+        <div class="linkedin">
+          <a href="https://www.linkedin.com/in/acerqueus" target="_blank" title="Profil LinkedIn de Antoine Cerqueus">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <div>
+          <a href="img/Antoine_CERQUEUS.pdf" class="cv" target="_blank" title="CV de Antoine Cerqueus">
+            CV
+          </a>
+        </div>
+        <div class="github">
+          <a href="https://github.com/AntoineCerqueus" target="_blank" title="Dépôt github de Antoine Cerqueus">
+            <i class="fab fa-github-square"></i>
+          </a>
+        </div>
       </div>
-      <div>
-        <a href="img/Antoine_CERQUEUS.pdf" class="cv" target="_blank">
-          CV
-        </a>
-      </div>
-      <div class="github">
-        <a href="https://github.com/AntoineCerqueus" target="_blank">
-          <i class="fab fa-github-square"></i>
-        </a>
-      </div>
-    </div>
-    <p class="portfolio">Antoine Cerqueus | 2021</p>
+      <p class="portfolio">Antoine Cerqueus | 2021</p>
     </footer>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
