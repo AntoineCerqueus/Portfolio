@@ -82,6 +82,25 @@ body {
 .bright .picture {
   background-image: url("../img/antoine_cerqueus_mini.jpg");
 }
+.bright #menuToggle span {
+  background-color: #000000;
+}
+.bright #menuToggle input:checked ~ span {
+  background: #ffffff;
+}
+.bright #menu {
+  background-color: #000000;
+}
+.bright #menuToggle a {
+  color: #ffffff;
+}
+.bright hr {
+  background-color: #ffffff;
+}
+.bright #menuToggle a.cv-reverse {
+  color: #000000;
+  background-color: #ffffff;
+}
 
 .element {
   position: fixed;

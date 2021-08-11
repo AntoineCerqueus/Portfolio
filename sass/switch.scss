@@ -112,6 +112,31 @@ body {
         background-image: url("../img/antoine_cerqueus_mini.jpg");
       }
 
+      #menuToggle span {
+        background-color: #000000;
+      }
+
+      #menuToggle input:checked~span {
+        background: #ffffff;
+      }
+
+      #menu {
+        background-color: #000000;
+      }
+
+      #menuToggle a {
+        color: #ffffff;
+      }
+
+      hr {
+        background-color: #ffffff;
+      }
+
+      #menuToggle a.cv-reverse {
+        color: #000000;
+        background-color: #ffffff;
+      }
+
 }
 
 .element {
