@@ -88,9 +88,11 @@
    transition-property: width, background-color;
  }
 
- .progress-striped .progress-bar {
+ .progress-striped .progress-bar,
+ .progress-striped-30 .progress-bar-30,
+ .progress-striped-50 .progress-bar-50,
+ .progress-striped-70 .progress-bar-70 {
    background-color: #fcbf55;
-   width: 80%;
    background-image: linear-gradient(45deg,
        rgb(252, 163, 17) 25%,
        transparent 25%,
@@ -99,7 +101,7 @@
        rgb(252, 163, 17) 75%,
        transparent 75%,
        transparent);
-   animation: progressAnimationStrike 3s;
+   
  }
 
  @keyframes progressAnimationStrike {
@@ -112,17 +114,13 @@
    }
  }
 
+ .progress-striped .progress-bar {
+   width: 80%;
+   animation: progressAnimationStrike 3s;
+ }
+
  .progress-striped-30 .progress-bar-30 {
-   background-color: #fcbf55;
    width: 30%;
-   background-image: linear-gradient(45deg,
-       rgb(252, 163, 17) 25%,
-       transparent 25%,
-       transparent 50%,
-       rgb(252, 163, 17) 50%,
-       rgb(252, 163, 17) 75%,
-       transparent 75%,
-       transparent);
    animation: progressAnimationStrike30 3s;
  }
 
@@ -136,17 +134,23 @@
    }
  }
 
+ .progress-striped-50 .progress-bar-50 {
+  width: 50%;
+  animation: progressAnimationStrike50 3s;
+}
+
+@keyframes progressAnimationStrike50 {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 50%;
+  }
+}
+
  .progress-striped-70 .progress-bar-70 {
-   background-color: #fcbf55;
    width: 70%;
-   background-image: linear-gradient(45deg,
-       rgb(252, 163, 17) 25%,
-       transparent 25%,
-       transparent 50%,
-       rgb(252, 163, 17) 50%,
-       rgb(252, 163, 17) 75%,
-       transparent 75%,
-       transparent);
    animation: progressAnimationStrike70 3s;
  }
 
@@ -160,29 +164,7 @@
    }
  }
 
- .progress-striped-50 .progress-bar-50 {
-   background-color: #fcbf55;
-   width: 50%;
-   background-image: linear-gradient(45deg,
-       rgb(252, 163, 17) 25%,
-       transparent 25%,
-       transparent 50%,
-       rgb(252, 163, 17) 50%,
-       rgb(252, 163, 17) 75%,
-       transparent 75%,
-       transparent);
-   animation: progressAnimationStrike50 3s;
- }
 
- @keyframes progressAnimationStrike50 {
-   from {
-     width: 0;
-   }
-
-   to {
-     width: 50%;
-   }
- }
 
  /* .show {
    opacity: 1;
