@@ -79,6 +79,9 @@ body {
   width: 70%;
   animation: progressAnimationStrike70 3s;
 }
+.bright .picture {
+  background-image: url("../img/antoine_cerqueus_mini.jpg");
+}
 
 .element {
   position: fixed;
@@ -169,6 +172,10 @@ input[type=checkbox].toggle-switch:checked::after {
   color: gray;
 }
 .active .opt-2 {
+  color: #000000;
+}
+
+.hard-skills h3 {
   color: #000000;
 }
 

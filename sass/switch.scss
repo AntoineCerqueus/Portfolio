@@ -108,6 +108,10 @@ body {
         animation: progressAnimationStrike70 3s;
     }
 
+    .picture {
+        background-image: url("../img/antoine_cerqueus_mini.jpg");
+      }
+
 }
 
 .element {
@@ -217,6 +221,10 @@ input[type=checkbox].toggle-switch:checked {
     .opt-2 {
         color: #000000;
     }
+}
+
+.hard-skills h3{
+    color: #000000;
 }
 
 // .checkbox-wrap {}
