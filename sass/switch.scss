@@ -1,4 +1,4 @@
-$poppins: 'Poppins',
+$open-sans: 'Open Sans',
 sans-serif;
 $background: #000000;
 $color: #fcbf55;
@@ -6,7 +6,7 @@ $shadow: 0 4px 12px -2px rgba(#6B75A1, .16);
 $ease: all 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
 body {
-    font-family: $poppins;
+    font-family: $open-sans;
     background: $background;
     color: $color;
     transition: .2s all;
@@ -19,20 +19,44 @@ body {
     .intro-2,
     a,
     .about,
-    p {
+    p,
+    h1,
+    h2,
+    h4,
+    ul {
         color: #000000;
+
+    }
+
+    .container {
+        background-color: #000000;
+    }
+
+    .box,
+    .box-soon {
+        border: solid 3px #ffffff;
+        box-shadow: 2px 10px 20px -7px #ffffff;
+    }
+
+    .soon {
+        color: #ffffff;
     }
 
     .box-title,
     .name,
+    .container-soon p,
     .hard-skills h2,
-    .hard-skills h3 {
+    .hard-skills h3{
         color: #ffffff;
+    }
+
+    .box-title {
+        border-top: 2px solid #ffffff;
+
     }
 
     .nav,
     .nav-inverse,
-    .container,
     .soft-skills {
         border: 2px solid #000000;
         color: #000000;
@@ -42,13 +66,15 @@ body {
     .nav,
     .hard-skills,
     .nav-inverse:hover,
-    .cv {
+    .cv,
+    .container-soon {
         color: #ffffff;
         background-color: #000000;
     }
 
     .nav-inverse,
-    .nav:hover {
+    .nav:hover,
+    .box-title {
         color: #000000;
         background-color: #ffffff;
     }
@@ -110,43 +136,46 @@ body {
 
     .picture {
         background-image: url("../img/antoine_cerqueus_mini.jpg");
-      }
+    }
 
-      #menuToggle span {
+    #menuToggle span {
         background-color: #000000;
-      }
+        box-shadow: 0px 3px 0px #ffffff;
+    }
 
-      #menuToggle input:checked~span {
+    #menuToggle input:checked~span {
         background: #ffffff;
-      }
+    }
 
-      #menu {
+    #menu {
         background-color: #000000;
-      }
+        box-shadow: -1px 2px 8px #ffffff;
+    }
 
-      #menuToggle a {
+    #menuToggle a {
         color: #ffffff;
-      }
+    }
 
-      hr {
+    hr {
         background-color: #ffffff;
-      }
+    }
 
-      #menuToggle a.cv-reverse {
+    #menuToggle a.cv-reverse {
         color: #000000;
         background-color: #ffffff;
-      }
+    }
 
 }
 
 .element {
     position: fixed;
-    top: 2em;
-    left: 2em;
+    top: 3em;
+    right: 0em;
+    margin-right: 5px;
 }
 
 input[type=checkbox].toggle-switch {
-    transform: rotate(180deg);
+    transform: rotate(90deg);
 
     appearance: none;
     -moz-appearance: none;
@@ -166,6 +195,7 @@ input[type=checkbox].toggle-switch {
 
     transition: background-color 0.09s ease-in-out;
     position: relative;
+    top: 0.3em;
 
     &:active::after {
         background-color: #f2f2f2;
@@ -211,18 +241,16 @@ input[type=checkbox].toggle-switch:checked {
     color: gray;
 }
 
-.opt-1 {
+.dark {
     color: #fcbf55;
     position: relative;
-    left: 2em;
-    width: 2em;
+    left: 1em;
+    top: -3.7em;
 }
 
-.opt-2 {
+.light {
     position: relative;
-    left: -0.2em;
-    bottom: 1.2em;
-    width: 2em;
+    right: -0.9em;
 }
 
 .fa-sun {
@@ -233,23 +261,25 @@ input[type=checkbox].toggle-switch:checked {
     font-size: 1.1em;
 }
 
-.opt-1,
-.opt-2 {
+.dark,
+.light {
     transition: .2s all;
 }
 
 .active {
-    .opt-1 {
+    .dark {
         color: gray;
     }
 
-    .opt-2 {
+    .light {
         color: #000000;
     }
 }
 
-.hard-skills h3{
+.hard-skills h3 {
     color: #000000;
 }
 
-// .checkbox-wrap {}
+.container-soon p {
+    color: #000000;
+}

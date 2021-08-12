@@ -1,8 +1,7 @@
 body {
   overflow-x: hidden;
   margin: 0;
-  /* background-color: #000000; */
-  font-family: 'Open Sans', sans-serif;
+  background-color: #000000;
 }
 
 main {
@@ -69,13 +68,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin: auto; */
-  /* width: 10vw; */
   padding-left: 8vw;
   height: 100vh;
-  /* background-color: #fcbf55; */
-  /* color: #fcbf55; */
-  /* display: none; */
 }
 
 #B,
@@ -84,7 +78,7 @@ main {
 #J,
 #Oo,
 #U,
-#R {
+#R{
   display: none;
 }
 
@@ -92,8 +86,6 @@ main {
   display: flex;
   flex-direction: column;
   margin: auto;
-  /* background-color: #000000; */
-  /* color: #fcbf55; */
   padding-left: 6vw;
   padding-right: 2vw;
   display: none;
@@ -113,7 +105,6 @@ h3 {
 }
 
 h4 {
-  /* color: #fcbf55; */
   font-size: 1.5em;
 }
 

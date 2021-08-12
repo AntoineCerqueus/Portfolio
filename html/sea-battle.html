@@ -12,6 +12,7 @@
     <link rel="stylesheet" media="screen" type="text/css" href="../css/projects.css">
     <link rel="stylesheet" media="screen" type="text/css" href="../css/style.css">
     <link rel="stylesheet" media="screen" type="text/css" href="../css/mediaqueries.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="../css/switch.css" />
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -33,6 +34,23 @@
 
 <body>
     <main>
+
+        <!-- ========================= 
+                SWITCH  
+     ========================= -->
+
+        <div class="element" id="switch">
+            <div class="checkbox-wrap ">
+                <input type="checkbox" class="toggle-switch">
+            </div>
+            <div class="opts">
+                <div class="dark"><i class="fas fa-moon"></i>
+                </div>
+                <div class="light"><i class="fas fa-sun"></i>
+                </div>
+            </div>
+        </div>
+
         <div class="content">
             <h1 class="start">Sea Battle</h1>
             <h2>Jeu de bataille navale réalisé en JS Vanilla</h2>
@@ -47,7 +65,8 @@
             <a href="http://bataille-navale.antoinecerqueus.fr/" title="Jeu de bataille navale" target="_blank">
                 <div class="nav-inverse left"> <i class="fas fa-globe"></i> visite</div>
             </a>
-            <a href="https://github.com/AntoineCerqueus/BattleShipProject/tree/master/project-battleship-last-ver" title="Jeu de bataille navale" target="_blank">
+            <a href="https://github.com/AntoineCerqueus/BattleShipProject/tree/master/project-battleship-last-ver"
+                title="Jeu de bataille navale" target="_blank">
                 <div class="nav"><i class="fas fa-code"></i> source</div>
             </a>
         </div>
@@ -55,22 +74,24 @@
             <div>
                 <h4>Brief</h4>
                 <p class="border">
-                    Vous travaillez pour une maison d'édition de jeux vidéos, "PlayMyGameOrDie".<br/>
+                    Vous travaillez pour une maison d'édition de jeux vidéos, "PlayMyGameOrDie".<br />
                     Cette année, pour l'E3, l'entreprise a réservé un stand et veut consacrer une partie de l'espace aux
-                    jeux vintage et à l'IA.<br/>
+                    jeux vintage et à l'IA.<br />
                     C'est pourquoi vous devez avec votre équipe, développer le jeu de la bataille navale qui s'adapte
-                    sur Web, Tablette et Mobile.<br/>
-                    Le joueur, après avoir saisi quelques informations personnelles, doit pouvoir faire une partie complète, seul contre l'ordinateur.<br/>
+                    sur Web, Tablette et Mobile.<br />
+                    Le joueur, après avoir saisi quelques informations personnelles, doit pouvoir faire une partie
+                    complète, seul contre l'ordinateur.<br />
                     Il peut choisir la difficulté de la partie : ce qui modifie le nombre de bateaux à poser sur le
-                    plateau.<br/>
+                    plateau.<br />
                     Si le joueur réussi à gagner, c'est bien pour lui.
                 </p>
             </div>
             <div>
                 <h4>Contexte</h4>
                 <p>
-                    Le site web est fonctionnel et correspond à la maquette imaginée.<br/> 
-                    Il permet de jouer une partie complète contre l'ordinateur et de positionner plusieurs bateaux.<br/> 
+                    Le site web est fonctionnel et correspond à la maquette imaginée.<br />
+                    Il permet de jouer une partie complète contre l'ordinateur et de positionner plusieurs
+                    bateaux.<br />
                     L'outil de gestion de projet est utilisé par l'ensemble du groupe tout au long du projet.
                     <p class="border"> Projet réalisé à trois : Découverte de JavaScript</p>
                 </p>
@@ -104,34 +125,36 @@
                 </a>
             </div>
         </div>
-       
-   <!-- ========================= 
+
+        <!-- ========================= 
               FOOTER  
      ========================= -->
 
-     <footer id="footer">
-        <div class="social">
-            <div class="linkedin">
-                <a href="https://www.linkedin.com/in/acerqueus" target="_blank"
-                    title="Profil LinkedIn de Antoine Cerqueus">
-                    <i class="fab fa-linkedin"></i>
-                </a>
+        <footer id="footer">
+            <div class="social">
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/acerqueus" target="_blank"
+                        title="Profil LinkedIn de Antoine Cerqueus">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="img/Antoine_CERQUEUS.pdf" class="cv" target="_blank" title="CV de Antoine Cerqueus">
+                        CV
+                    </a>
+                </div>
+                <div class="github">
+                    <a href="https://github.com/AntoineCerqueus" target="_blank"
+                        title="Dépôt github de Antoine Cerqueus">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                </div>
             </div>
-            <div>
-                <a href="img/Antoine_CERQUEUS.pdf" class="cv" target="_blank" title="CV de Antoine Cerqueus">
-                    CV
-                </a>
-            </div>
-            <div class="github">
-                <a href="https://github.com/AntoineCerqueus" target="_blank"
-                    title="Dépôt github de Antoine Cerqueus">
-                    <i class="fab fa-github-square"></i>
-                </a>
-            </div>
-        </div>
-        <p class="portfolio">Antoine Cerqueus | 2021</p>
-    </footer>
-</main>
+            <p class="portfolio">Antoine Cerqueus | 2021</p>
+        </footer>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/script-jquery.js"></script>
 </body>
 
 </html>

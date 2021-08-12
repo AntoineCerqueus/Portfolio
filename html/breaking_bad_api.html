@@ -12,6 +12,7 @@
     <link rel="stylesheet" media="screen" type="text/css" href="../css/projects.css">
     <link rel="stylesheet" media="screen" type="text/css" href="../css/style.css">
     <link rel="stylesheet" media="screen" type="text/css" href="../css/mediaqueries.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="../css/switch.css" />
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -25,13 +26,28 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Breaking Bad API</title>
 </head>
 
 <body>
     <main>
+        <!-- ========================= 
+                SWITCH  
+     ========================= -->
+
+        <div class="element" id="switch">
+            <div class="checkbox-wrap ">
+                <input type="checkbox" class="toggle-switch">
+            </div>
+            <div class="opts">
+                <div class="dark"><i class="fas fa-moon"></i>
+                </div>
+                <div class="light"><i class="fas fa-sun"></i>
+                </div>
+            </div>
+        </div>
+
         <div class="content">
             <h1 class="start">Breaking Bad API</h1>
             <h2>TD sur la récupération et traitement d'informations via une API</h2>
@@ -118,6 +134,8 @@
             <p class="portfolio">Antoine Cerqueus | 2021</p>
         </footer>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/script-jquery.js"></script>
 </body>
 
 </html>

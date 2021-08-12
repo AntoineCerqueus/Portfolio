@@ -1,5 +1,5 @@
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   background: #000000;
   color: #fcbf55;
   transition: 0.2s all;
@@ -12,18 +12,36 @@ body {
 .bright .intro-2,
 .bright a,
 .bright .about,
-.bright p {
+.bright p,
+.bright h1,
+.bright h2,
+.bright h4,
+.bright ul {
   color: #000000;
+}
+.bright .container {
+  background-color: #000000;
+}
+.bright .box,
+.bright .box-soon {
+  border: solid 3px #ffffff;
+  box-shadow: 2px 10px 20px -7px #ffffff;
+}
+.bright .soon {
+  color: #ffffff;
 }
 .bright .box-title,
 .bright .name,
+.bright .container-soon p,
 .bright .hard-skills h2,
 .bright .hard-skills h3 {
   color: #ffffff;
 }
+.bright .box-title {
+  border-top: 2px solid #ffffff;
+}
 .bright .nav,
 .bright .nav-inverse,
-.bright .container,
 .bright .soft-skills {
   border: 2px solid #000000;
   color: #000000;
@@ -32,12 +50,14 @@ body {
 .bright .nav,
 .bright .hard-skills,
 .bright .nav-inverse:hover,
-.bright .cv {
+.bright .cv,
+.bright .container-soon {
   color: #ffffff;
   background-color: #000000;
 }
 .bright .nav-inverse,
-.bright .nav:hover {
+.bright .nav:hover,
+.bright .box-title {
   color: #000000;
   background-color: #ffffff;
 }
@@ -84,12 +104,14 @@ body {
 }
 .bright #menuToggle span {
   background-color: #000000;
+  box-shadow: 0px 3px 0px #ffffff;
 }
 .bright #menuToggle input:checked ~ span {
   background: #ffffff;
 }
 .bright #menu {
   background-color: #000000;
+  box-shadow: -1px 2px 8px #ffffff;
 }
 .bright #menuToggle a {
   color: #ffffff;
@@ -104,12 +126,13 @@ body {
 
 .element {
   position: fixed;
-  top: 2em;
-  left: 2em;
+  top: 3em;
+  right: 0em;
+  margin-right: 5px;
 }
 
 input[type=checkbox].toggle-switch {
-  transform: rotate(180deg);
+  transform: rotate(90deg);
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -123,6 +146,7 @@ input[type=checkbox].toggle-switch {
   background-color: gray;
   transition: background-color 0.09s ease-in-out;
   position: relative;
+  top: 0.3em;
 }
 input[type=checkbox].toggle-switch:active::after {
   background-color: #f2f2f2;
@@ -160,18 +184,16 @@ input[type=checkbox].toggle-switch:checked::after {
   color: gray;
 }
 
-.opt-1 {
+.dark {
   color: #fcbf55;
   position: relative;
-  left: 2em;
-  width: 2em;
+  left: 1em;
+  top: -3.7em;
 }
 
-.opt-2 {
+.light {
   position: relative;
-  left: -0.2em;
-  bottom: 1.2em;
-  width: 2em;
+  right: -0.9em;
 }
 
 .fa-sun {
@@ -182,19 +204,23 @@ input[type=checkbox].toggle-switch:checked::after {
   font-size: 1.1em;
 }
 
-.opt-1,
-.opt-2 {
+.dark,
+.light {
   transition: 0.2s all;
 }
 
-.active .opt-1 {
+.active .dark {
   color: gray;
 }
-.active .opt-2 {
+.active .light {
   color: #000000;
 }
 
 .hard-skills h3 {
+  color: #000000;
+}
+
+.container-soon p {
   color: #000000;
 }
 

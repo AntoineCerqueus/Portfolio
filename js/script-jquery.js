@@ -15,19 +15,25 @@ $(document).ready(function () {
         $("#U").delay(1500).fadeIn(1400);
         $("#R").delay(1800).fadeIn(1400);
         $(".intro-2").delay(2600).fadeIn(3000);
+        // $(".element").delay(9000).fadeIn(3000);
         hideElements();
     }
 
-    // ===================
-    //  SWITCH
-    // ===================
 
-    $(".toggle-switch").on("click", function (event) {
-        $("body").toggleClass("bright");
-        $("body").toggleClass("active");
-    });
 
 });
+
+// ===================
+//  SWITCH
+// ===================
+
+$(".toggle-switch").on("click", function (event) {
+    $("body").toggleClass("bright");
+    $("body").toggleClass("active");
+
+});
+
+
 
 // if (window.matchMedia("(max-width: 1200px)").matches) {
 //     /* La largeur minimum de l'affichage est 600 px inclus */
@@ -42,6 +48,7 @@ const showJs = $('#js');
 const showPhp = $('#php');
 const showWp = $('#wp');
 const navigation = $('#navigation');
+const mode = $('#switch');
 let skills = $('#skills');
 let about = $('#about')
 const footer = $('#footer');
@@ -57,26 +64,6 @@ function goIn() {
     showElements();
 };
 
-// function goIn() {
-//     home.hide();
-//     showAll.show();
-//     showWorkMenu.show();
-//     $(document).ready(function () {
-
-//         var skillsFadeIn = skills.offset().top;
-//         var aboutFadeIn = about.offset().top;
-
-//         $(document).scroll(function () {
-//             if (skillsFadeIn && aboutFadeIn <= $(document).scrollTop()) {
-//                 skills.removeClass("hidden").fadeIn();
-//                 about.removeClass("hidden").fadeIn();
-//             }
-//         });
-
-//     });
-
-// };
-
 function hideTechnologies() {
     showJs.hide();
     showPhp.hide();
@@ -88,6 +75,7 @@ function showElements() {
     showAll.show();
     showWorkMenu.show();
     navigation.show();
+    // mode.show();
     skills.show();
     footer.show();
     about.show();
@@ -97,6 +85,7 @@ function hideElements() {
     showWorkMenu.hide();
     showAll.hide();
     navigation.hide();
+    // mode.hide();
     about.hide();
     skills.hide();
     footer.hide();
@@ -148,3 +137,33 @@ $('a[href^="#"]').on('click', function (e) {
         }, "1000");
     }
 });
+
+// ==========================
+// STORE MODE IN SESSION
+// ==========================
+
+// const toggleSwitch = $(".toggle-switch");
+// const currentTheme = session.getItem('theme');
+// const element = document.body;
+// if (currentTheme) {
+//     document.documentElement.setAttribute('data-theme', currentTheme);
+//     if (currentTheme === 'bright') {
+//         toggleSwitch.checked = true;
+//     }
+//     if (session.theme === "bright") {
+//         element.classList.toggle("bright")
+//     }
+// }
+
+// function switchTheme(e) {
+//     if (e.target.checked) {
+//         document.documentElement.setAttribute('data-theme', 'active');
+//         session.setItem('theme', 'active');
+//         element.classList.toggle("bright")
+//     } else {
+//         document.documentElement.setAttribute('data-theme', 'light');
+//         session.setItem('theme', 'light');
+//         element.classList.toggle("bright")
+//     }
+// }
+// toggleSwitch.addEventListener('change', switchTheme, false);
