@@ -19,19 +19,55 @@ $(document).ready(function () {
         hideElements();
     }
 
+    // ===================
+    //  SWITCH
+    // ===================
+
+    switchButton.on("click", function (event) {
+        $("body").toggleClass("bright");
+        $("body").toggleClass("active");
+        // switchButton.toggleClass('active');
 
 
+        // ==========================
+        // STORE MODE IN LOCALSTORAGE
+        // ==========================
+
+        if ($(this).is(":checked")) {
+            localStorage.setItem("checked", "yes");
+        } else {
+            localStorage.setItem("checked", "no");
+        }
+
+        if (document.body.classList.contains('bright')) { //when the body has the class 'light' currently
+            localStorage.setItem('lightMode', 'enabled'); //store this data if light mode is on
+        } else {
+            localStorage.setItem('lightMode', 'disabled'); //store this data if light mode is off
+        }
+
+    });
+
+    let checkedPosition = localStorage.getItem('checked');
+
+    if (checkedPosition == "yes") {
+        switchButton.prop('checked', true);
+    }
+    else if(checkedPosition == "no"){
+        switchButton.prop('checked', false);
+    }
+
+    if (localStorage.getItem('lightMode') == 'enabled') {
+        $("body").toggleClass("bright");
+        $("body").toggleClass("active");
+        // switchButton.toggleClass('active');
+    }
 });
 
-// ===================
-//  SWITCH
-// ===================
 
-$(".toggle-switch").on("click", function (event) {
-    $("body").toggleClass("bright");
-    $("body").toggleClass("active");
 
-});
+const switchButton = $(".toggle-switch");
+
+
 
 
 
@@ -48,7 +84,6 @@ const showJs = $('#js');
 const showPhp = $('#php');
 const showWp = $('#wp');
 const navigation = $('#navigation');
-const mode = $('#switch');
 let skills = $('#skills');
 let about = $('#about')
 const footer = $('#footer');
@@ -75,7 +110,6 @@ function showElements() {
     showAll.show();
     showWorkMenu.show();
     navigation.show();
-    // mode.show();
     skills.show();
     footer.show();
     about.show();
@@ -85,7 +119,6 @@ function hideElements() {
     showWorkMenu.hide();
     showAll.hide();
     navigation.hide();
-    // mode.hide();
     about.hide();
     skills.hide();
     footer.hide();
@@ -137,33 +170,3 @@ $('a[href^="#"]').on('click', function (e) {
         }, "1000");
     }
 });
-
-// ==========================
-// STORE MODE IN SESSION
-// ==========================
-
-// const toggleSwitch = $(".toggle-switch");
-// const currentTheme = session.getItem('theme');
-// const element = document.body;
-// if (currentTheme) {
-//     document.documentElement.setAttribute('data-theme', currentTheme);
-//     if (currentTheme === 'bright') {
-//         toggleSwitch.checked = true;
-//     }
-//     if (session.theme === "bright") {
-//         element.classList.toggle("bright")
-//     }
-// }
-
-// function switchTheme(e) {
-//     if (e.target.checked) {
-//         document.documentElement.setAttribute('data-theme', 'active');
-//         session.setItem('theme', 'active');
-//         element.classList.toggle("bright")
-//     } else {
-//         document.documentElement.setAttribute('data-theme', 'light');
-//         session.setItem('theme', 'light');
-//         element.classList.toggle("bright")
-//     }
-// }
-// toggleSwitch.addEventListener('change', switchTheme, false);
