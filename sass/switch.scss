@@ -187,7 +187,7 @@ input[type=checkbox].toggle-switch {
     // height and width are reversed
 
     /* width of the track */
-    width: 3em;
+    width: 1.8em;
     /* height of the track */
     height: 0.9em;
     border-radius: 3em;
@@ -196,6 +196,7 @@ input[type=checkbox].toggle-switch {
     transition: background-color 0.09s ease-in-out;
     position: relative;
     top: 0.3em;
+    right: 1.2em;
 
     &:active::after {
         background-color: #f2f2f2;
@@ -207,8 +208,8 @@ input[type=checkbox].toggle-switch {
         /* toggle shape -- 
      height should equal width 
      to maintain circle */
-        width: 1.5em;
-        height: 1.5em;
+        width: 1.2em;
+        height: 1.2em;
         background-color: #fcbf55;
         border-radius: 3em;
         position: absolute;
@@ -232,7 +233,7 @@ input[type=checkbox].toggle-switch:checked {
         // Location of toggle handle when checked
         // should equal ~ .5 of the width of
         // input[type=checkbox].toggle-switch
-        left: 2em;
+        left: 1em;
         background-color: #000000;
     }
 }
@@ -244,21 +245,22 @@ input[type=checkbox].toggle-switch:checked {
 .dark {
     color: #fcbf55;
     position: relative;
-    left: 1em;
-    top: -3.7em;
+    left: -0.45em;
+    top: -3.05em;
 }
 
 .light {
     position: relative;
-    right: -0.9em;
+    right: 0.5em;
+    bottom: 1em;
 }
 
 .fa-sun {
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 .fa-moon {
-    font-size: 1.1em;
+    font-size: 0.9em;
 }
 
 .dark,
