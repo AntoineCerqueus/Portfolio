@@ -61,6 +61,10 @@ $(document).ready(function () {
         $("body").toggleClass("active");
     }
 
+    if (window.location.href.indexOf("canyoning") > -1 || window.location.href.indexOf("ecommerce") > -1 || window.location.href.indexOf("wp_theme") > -1 || window.location.href.indexOf("sea-battle") > -1 || window.location.href.indexOf("breaking_bad_api") > -1 || window.location.href.indexOf("prise_de_contact") > -1 || window.location.href.indexOf("market_place") > -1) {
+        element.show();
+    }
+
 });
 
 const switchButton = $(".toggle-switch");
