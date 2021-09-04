@@ -7,15 +7,17 @@ $(document).ready(function () {
         goIn();
         hideTechnologies();
     } else {
-        $("#B").fadeIn(1400);
-        $("#O").delay(300).fadeIn(1400);
-        $("#N").delay(600).fadeIn(1400);
-        $("#J").delay(900).fadeIn(1400);
-        $("#Oo").delay(1200).fadeIn(1400);
-        $("#U").delay(1500).fadeIn(1400);
-        $("#R").delay(1800).fadeIn(1400);
-        $(".intro-2").delay(2600).fadeIn(3000);
-        // $(".element").delay(9000).fadeIn(3000);
+        $("#B").fadeIn(3000);
+        $("#O").fadeIn(3000);
+        $("#N").fadeIn(3000);
+        $("#J").fadeIn(3000);
+        $("#Oo").fadeIn(3000);
+        $("#U").fadeIn(3000);
+        $("#R").fadeIn(3000);
+        $("#intro-2-title").delay(2000).fadeIn(2000);
+        $("#intro-2-pres").delay(4000).fadeIn(2000);
+        enter.delay(10000).fadeIn(2000);
+        element.delay(10000).fadeIn(2000);
         hideElements();
     }
 
@@ -26,8 +28,6 @@ $(document).ready(function () {
     switchButton.on("click", function (event) {
         $("body").toggleClass("bright");
         $("body").toggleClass("active");
-        // switchButton.toggleClass('active');
-
 
         // ==========================
         // STORE MODE IN LOCALSTORAGE
@@ -39,10 +39,11 @@ $(document).ready(function () {
             localStorage.setItem("checked", "no");
         }
 
-        if (document.body.classList.contains('bright')) { //when the body has the class 'light' currently
-            localStorage.setItem('lightMode', 'enabled'); //store this data if light mode is on
+        if (document.body.classList.contains('bright')) {
+            $(".cv").prop("href", "img/cv_antoine_cerqueus_noir_et_blanc.pdf");
+            localStorage.setItem('lightMode', 'enabled');
         } else {
-            localStorage.setItem('lightMode', 'disabled'); //store this data if light mode is off
+            localStorage.setItem('lightMode', 'disabled');
         }
 
     });
@@ -51,31 +52,19 @@ $(document).ready(function () {
 
     if (checkedPosition == "yes") {
         switchButton.prop('checked', true);
-    }
-    else if(checkedPosition == "no"){
+    } else if (checkedPosition == "no") {
         switchButton.prop('checked', false);
     }
 
     if (localStorage.getItem('lightMode') == 'enabled') {
         $("body").toggleClass("bright");
         $("body").toggleClass("active");
-        // switchButton.toggleClass('active');
     }
+
 });
 
-
-
 const switchButton = $(".toggle-switch");
-
-
-
-
-
-// if (window.matchMedia("(max-width: 1200px)").matches) {
-//     /* La largeur minimum de l'affichage est 600 px inclus */
-//   } else {
-//     /* L'affichage est inférieur à 600px de large */
-//   }
+const element = $(".element");
 
 const showWorkMenu = $('#work');
 const home = $('#home');
@@ -113,6 +102,7 @@ function showElements() {
     skills.show();
     footer.show();
     about.show();
+    element.show();
 }
 
 function hideElements() {

@@ -20,7 +20,6 @@ main {
 
 .home {
   display: flex;
-  align-items: center;
   height: 100vh;
 }
 
@@ -29,7 +28,9 @@ main {
   font-size: 12vh;
 }
 
-#O {
+#O,
+#Oo,
+#U {
   font-size: 10vh;
 }
 
@@ -39,14 +40,6 @@ main {
 
 #J {
   font-size: 6vh;
-}
-
-#Oo {
-  font-size: 10vh;
-}
-
-#U {
-  font-size: 10vh;
 }
 
 #R {
@@ -78,16 +71,22 @@ main {
 #J,
 #Oo,
 #U,
-#R{
+#R,
+.element {
   display: none;
 }
 
 .intro-2 {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin-top: 21vh;
   padding-left: 6vw;
   padding-right: 2vw;
+}
+
+#intro-2-title,
+#intro-2-pres,
+#enter {
   display: none;
 }
 

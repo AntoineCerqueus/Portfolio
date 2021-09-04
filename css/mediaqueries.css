@@ -1,34 +1,13 @@
 @media screen and (max-width: 1200px) {
   #B {
-    margin-top: 4vh;
     font-size: 10vh;
   }
 
-  #O {
-    margin-top: 4vh;
-    font-size: 8vh;
-  }
-
-  #N {
-    margin-top: 4vh;
-    font-size: 8vh;
-  }
-
-  #J {
-    margin-top: 4vh;
-    font-size: 8vh;
-  }
-
-  #Oo {
-    margin-top: 4vh;
-    font-size: 8vh;
-  }
-
-  #U {
-    margin-top: 4vh;
-    font-size: 8vh;
-  }
-
+  #O,
+  #N,
+  #J,
+  #Oo,
+  #U,
   #R {
     margin-top: 4vh;
     font-size: 8vh;
@@ -37,27 +16,25 @@
   .home {
     display: flex;
     flex-direction: column;
-    align-items: center;
     height: 100vh;
-
   }
 
   .intro-1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* color: #fcbf55; */
     padding-left: 0px;
     height: 0px;
     margin-top: 10vh;
   }
 
   .intro-2 {
-    display: flex;
-    /* color: #fcbf55; */
-    text-align: center;
-    padding-left: 2vw;
+    padding-left: 6vw;
     margin: 8vh 0 4vh 0;
+  }
+
+  #intro-2-title {
+    text-align: center;
   }
 
   h1 {
@@ -115,11 +92,12 @@
     margin: 6vh 0 4vh 0;
   }
 
-  .left{
+  .left {
     margin-right: 0vw;
   }
 
-  .nav, .nav-inverse {
+  .nav,
+  .nav-inverse {
     width: 30vw;
     margin-bottom: 2vh;
   }
@@ -128,7 +106,8 @@
 
 @media screen and (min-width:320px) and (max-width: 640px) {
 
-  .nav, .nav-inverse {
+  .nav,
+  .nav-inverse {
     width: 30vw;
     margin-bottom: 2vh;
   }
@@ -143,15 +122,6 @@
 
   #work {
     margin-top: 18vh;
-  }
-
-  .intro-2 {
-    display: flex;
-    color: #fcbf55;
-    font-size: 0.9em;
-    text-align: start;
-    padding-left: 6vw;
-    margin: 8vh 0 4vh 0;
   }
 
   #enter {
@@ -173,7 +143,6 @@
   .border {
     text-align: start;
   }
-
 
   .overall {
     width: 70vw;
